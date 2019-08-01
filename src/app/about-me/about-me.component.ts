@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
   navItemTitle = "About Me"
-
+  isHighlighted = false
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleHighlighted() {
+    this.isHighlighted = !this.isHighlighted
   }
 
 }
